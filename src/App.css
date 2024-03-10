@@ -47,16 +47,49 @@ body {
     background-color: rgb(108, 247, 108);
     background: url(./images/back.jpg); 
 }
+
+.centered-arrow-container {
+	text-align: center; /* Center the content horizontally */
+	margin-top: 20px; /* Adjust the top margin as needed */
+	clear: both;
+	margin: 10px auto 0;
+  }
+
 .home-container{
     background-color: rgba(255, 255, 255, 0.7);
     height: 100%;
 	margin-top: 20px;
-    margin-right: 100px; /* Правый отступ */
-    margin-bottom: 100px; /* Нижний отступ */
-    margin-left: 100px; /* Левый отступ */
-	padding: 100px;
+    margin-right: 100px; 
+    margin-bottom: 100px;
+    margin-left: 100px; 
+	padding: 35px;
 	border-radius: 15px;
+	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
 }
+
+.pers-image-container {
+	width: 50%; /* Adjust the width as needed */
+	float: right; /* Float the container to the right */
+  }
+
+.problem-text-container {
+	width: 70%; /* Adjust the width as needed */
+  	float: left; /* Float the container to the left */
+  	padding: 20px; /* Add padding for spacing */
+  	box-sizing: border-box; /* Include padding in the width calculation */	
+}
+
+.problem-text-container p {
+	font-size: 16px; /* Adjust the font size */
+	line-height: 1.5; /* Adjust the line height for better readability */
+  }
+  
+.problem-text-container button {
+	display: inline-block; /* Make the button a block element for full width */
+	margin: 10px auto 0;
+  }
 
 .home-nav {
 	background-color: transparent;
