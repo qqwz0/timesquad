@@ -45,7 +45,7 @@ table {
 } */
 body {
     background-color: rgb(108, 247, 108);
-    /* background: url(./image.png); */
+    background: url(./images/back.jpg); 
 }
 .home-container{
     background-color: #fff;
