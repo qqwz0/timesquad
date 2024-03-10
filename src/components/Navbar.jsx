@@ -1,5 +1,6 @@
 import React from "react";
 import Button from '@mui/material/Button';
+import './font.css';
 
 const Navbar = () => {
 
@@ -33,11 +34,11 @@ const Navbar = () => {
     
     <nav style={navbarStyle}>
       <div>
-        <h1>TimeSquad</h1>
+      <h1 className="silkscreen-bold">TimeSquad</h1>
       </div>
       <div style={spacerStyle}></div>
       <div>
-        <Button variant="contained" style={buttonStyle}>
+        <Button className="silkscreen-regular" variant="contained" style={buttonStyle}>
           Log In
         </Button>
       </div>
