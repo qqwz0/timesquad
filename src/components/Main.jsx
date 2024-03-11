@@ -15,21 +15,21 @@ const Main = () => {
     marginTop: '10px',
   };
 
-  return (
-    <div className="home-container">
-      <div className="problem-text-container">
-      <p className="ubuntu-condensed-regular">
-          Ласкаво просимо на Time Fighters - твоє особисте просторово-часове поле пригод! Стань володарем свого часу та розвивай свого унікального персонажа, подорожуй між епохами і завданнями, та вигравай битви з часом!
-        </p>
-        <Button variant="contained" style={buttonStyle} endIcon={<ArrowForwardIcon />}>
-          Start!
-        </Button>
-      </div>
-      <div className="pers-image-container">
-        <img src="./images/piligrim.jpg" alt="Your character!" />
-      </div>
-    </div>
-  );
+  return ( 
+  <div className="home-container">
+  <div className="problem-text-container">
+  <p className="ubuntu-condensed-regular">
+      Ласкаво просимо на Time Fighters - твоє особисте просторово-часове поле пригод! Стань володарем свого часу та розвивай свого унікального персонажа, подорожуй між епохами і завданнями, та вигравай битви з часом!
+    </p>
+    <Button variant="contained" style={buttonStyle} endIcon={<ArrowForwardIcon />}>
+      Start!
+    </Button>
+  </div>
+  <div className="pers-image-container">
+    <img src="./images/piligrim.jpg" alt="Your character!" />
+  </div>
+</div>
+);
 };
 
 export default Main;

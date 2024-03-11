@@ -1,4 +1,5 @@
 import Home from "./components/Home";
+import Howitworks from "./components/Howitworks";
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
      <p>Hello project</p> */}
 
      <Home />
+     <Howitworks />
     </div>
   );
 }
