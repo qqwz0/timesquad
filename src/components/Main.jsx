@@ -22,15 +22,15 @@ const Main = () => {
 
   const howitworksInfoData = [
     {
-      title: "створюй завдання, занотовуй плани",
+      title: "Cтворюй завдання, занотовуй плани",
       icon: <ScheduleIcon />
     },
     {
-      title: "з легкістю та задоволенням виконуй їх у вигляді захоплюючої гри",
+      title: "З легкістю та задоволенням виконуй їх у вигляді захоплюючої гри",
       icon: <SportsEsportsIcon />
     },
     {
-      title: "долай прокрастинацію!",
+      title: "Долай прокрастинацію!",
       icon: <HowToRegIcon />
     },
   ];
@@ -46,16 +46,40 @@ const Main = () => {
     },
   ];
 
-  return ( 
+  return (
     <div className="home-container">
-      <div className="problem-text-container">
-        <p className="ubuntu-condensed-regular">
-          Ласкаво просимо на Time Fighters - твоє особисте просторово-часове поле пригод! Стань володарем свого часу та розвивай свого унікального персонажа, подорожуй між епохами і завданнями, та вигравай битви з часом!
-        </p>
-        <Button variant="contained" style={buttonStyle} endIcon={<ArrowForwardIcon />}>
-          Start!
-        </Button>
+  
+      <div className="problem-container">
+        <div className="problem-text-container">
+          <p className="ubuntu-condensed-regular">
+            Ласкаво просимо на Time Fighters - твоє особисте просторово-часове поле пригод! Стань володарем свого часу та розвивай свого унікального персонажа, подорожуй між епохами і завданнями, та вигравай битви з часом!
+          </p>
+          <Button variant="contained" style={buttonStyle} endIcon={<ArrowForwardIcon />}>
+            Start!
+          </Button>
+        </div>
+        <div className="problem-pic-container">
+          <img src="./images/piligrim.jpg" alt="Description"/> 
+        </div>
       </div>
+  
+      <div className="Possibilities-section-wrapper">
+        <div className="Possibilities-section-top">
+          <h1 className="ubuntu-condensed-heading">Різноманітність можливостей</h1>
+        </div>
+        <div className="Possibilities-section-shop">
+          <img src="./images/piligrim.jpg" alt="Our shop" />
+        </div>
+        <div>
+          <div className="Possibilities-section-text">
+            <p>Some text here...</p>
+          </div>
+          <div className="Possibilities-section-pic">
+            <img src="./images/piligrim.jpg" alt="Tasks adding" />
+          </div>
+        </div>
+      </div>
+  
       <div className="howitworks-section-wrapper">
         <div className="howitworks-section-top">
           <h1 className="ubuntu-condensed-heading">Як це працює?</h1>
@@ -68,28 +92,6 @@ const Main = () => {
             <div className="howitworks-section-info" key={index}>
               <h2 className="ubuntu-condensed-regular">{data.title}</h2>
               {data.icon}
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="Possibilities-section-wrapper">
-        <div className="Possibilities-section-top">
-          <h1 className="ubuntu-condensed-heading">різноманітність можливостей</h1>
-        </div>
-        <div className="Possibilities-section-bottom">
-          {PossibilitiesInfoData.map((data, index) => (
-            <div className="Possibilities-section-info" key={index}>
-              <div className="icon-wrapper">
-                {data.icon}
-              </div>
-              <h2 className="ubuntu-condensed-regular">{data.title}</h2>
-              {data.title === "завдання" && (
-                <div className="additional-buttons">
-                  <button className="additional-button">1...</button>
-                  <button className="additional-button">2...</button>
-                  <button className="additional-button">3...</button>
-                </div>
-              )}
             </div>
           ))}
         </div>
