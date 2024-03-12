@@ -46,6 +46,7 @@ table {
 body {
   background-color: rgb(108, 247, 108);
   background: url(./images/back.jpg); 
+  background-size: cover;
 }
 
 .centered-arrow-container {
@@ -65,8 +66,8 @@ body {
   padding: 35px;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .pers-image-container {
@@ -114,6 +115,9 @@ body {
 
 .howitworks-section-wrapper {
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .howitworks-section-top p {
@@ -164,83 +168,64 @@ body {
   align-items: center;
   font-weight: 600;
 }
+
 .ubuntu-condensed-regular.larger-font {
 	font-size: 18px;
-  }
-  .ubuntu-condensed-heading {
+}
+
+.ubuntu-condensed-heading {
 	font-family: 'Ubuntu Condensed', sans-serif !important;
-  }
-  .Possibilities-section-wrapper {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Це додається для центрування всього контенту вертикально */
+}
+
+.Possibilities-section-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Possibilities-section-top p {
-    text-align: center;
-    max-width: 600px !important;
+  text-align: center;
+  max-width: 600px !important;
 }
 
 .Possibilities-section-top h1 {
-    max-width: 700px !important;
+  max-width: 700px !important;
 }
 
 .Possibilities-section-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .Possibilities-section-info {
-    width: 400px;
-    min-height: 200px;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 1rem;
-    color: #505050;
-    margin: 1rem 1rem;
+  width: 400px;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  color: #505050;
+  margin: 1rem 1rem;
 }
 
 .Possibilities-section-info h2 {
-    margin: 1rem 0rem;
+  margin: 1rem 0rem;
 }
 
 .Possibilities-section-bottom {
-    margin-top: 2rem; /* Змінено відступ від верхньої частини */
-    display: flex;
-    justify-content: space-between;
-    width: 50%; /* Додано */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .text-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 20px;
-    color: #505050;
-    padding: 0;
+  background: none;
 }
-
-.text-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 50px;}
-
-.additional-buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .additional-button {
-      margin-top: 15px;
-    }
