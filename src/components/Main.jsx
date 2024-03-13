@@ -35,17 +35,6 @@ const Main = () => {
     },
   ];
 
-  const PossibilitiesInfoData = [
-    {
-      title: "магазин",
-      icon: <StoreIcon />,
-    },
-    {
-      title: "завдання",
-      icon: <AssignmentIcon />,
-    },
-  ];
-
   return (
     <div className="home-container">
   
@@ -67,15 +56,23 @@ const Main = () => {
         <div className="Possibilities-section-top">
           <h1 className="ubuntu-condensed-heading">Різноманітність можливостей</h1>
         </div>
-        <div className="Possibilities-section-shop">
-          <img src="./images/piligrim.jpg" alt="Our shop" />
-        </div>
-        <div>
-          <div className="Possibilities-section-text">
-            <p>Some text here...</p>
+        <div className="Possibilities-section-content">
+          <div className="Possibilities-section-shop">
+            <div className="Possibilities-section-text">
+              Our Shop
+            </div>
+            <div className="Possibilities-section-pic">
+              <img src="placeholder_image_url" alt="Our Shop Image"/> 
+            </div>
           </div>
-          <div className="Possibilities-section-pic">
-            <img src="./images/piligrim.jpg" alt="Tasks adding" />
+          <div className="Possibilities-section-tasks">
+            <div className="Possibilities-section-pic">
+              <img src="placeholder_image_url" alt="Tasks Image"/> 
+            </div>
+            <div className="Possibilities-section-text">
+              Tasks Adding
+              <p>Some text here...</p>
+            </div>
           </div>
         </div>
       </div>

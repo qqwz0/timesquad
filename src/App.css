@@ -229,9 +229,42 @@ body {
   max-width: 700px !important;
 }
 
-
-  
-
 .text-button {
   background: none;
+}
+.Possibilities-section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Possibilities-section-shop,
+.Possibilities-section-tasks {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.Possibilities-section-pic {
+  margin-top: 30px;
+}
+
+.Possibilities-section-shop {
+  margin-right: 150px;
+}
+
+.Possibilities-section-tasks {
+  margin-left: 400px;
+}
+
+.Possibilities-section-text {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.Possibilities-section-pic img {
+  max-width: 100%;
+  height: auto;
 }
