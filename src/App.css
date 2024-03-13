@@ -43,6 +43,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } */
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(108, 247, 108);
   background: url(./images/back.jpg); 
@@ -218,6 +221,7 @@ body {
 
 .Possibilities-section-pic img {
     margin-left: auto;
+    width: 200px;
 }
 
 .Possibilities-section p {
@@ -233,10 +237,20 @@ body {
   background: none;
 }
 .Possibilities-section-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .grid1 { grid-area: 1 / 1 / 2 / 2; }
+    .grid2 { grid-area: 2 / 3 / 3 / 4; }
+    .grid3 { grid-area: 1 / 3 / 2 / 4; }
+    .grid4 { grid-area: 2 / 1 / 3 / 2; }
+    .grid5 { grid-area: 3 / 2 / 4 / 3;
+    text-align: center; }
+
 
 .Possibilities-section-shop,
 .Possibilities-section-tasks {
@@ -260,11 +274,36 @@ body {
 }
 
 .Possibilities-section-text {
-  margin-bottom: 100px;
-  text-align: center;
+  /* margin-bottom: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Possibilities-section-pic img {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%;
+  height: auto; */
+}
+
+.grid3_movingarrow{
+  transform: rotate(180);
+  -webkit-transform: rotate(180);
+  -moz-transform: rotate(180);
+  -ms-transform: rotate(180);
+  -o-transform: rotate(180);
+}
+/* Ебучі кнопки від mui */
+/* .css-i4bv87-MuiSvgIcon-root{
+  font-size: none;
+} */
+.moving-arrow > .css-i4bv87-MuiSvgIcon-root{
+  font-size: 6rem ;
+}
+.scroll{
+  font-size: 2rem;
+}
+.scroll .scroll_arrow{
+  font-size: 3rem;
+  text-decoration: none;
+  margin-top: 100px;
 }
