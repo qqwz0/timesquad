@@ -9,7 +9,7 @@ function App() {
      <p>Hello project</p>
      /<Home />*/}
 
-     <LogIn />
+     <Home />
     </div>
   );
 }
