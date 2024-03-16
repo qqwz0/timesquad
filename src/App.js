@@ -1,13 +1,15 @@
-import Home from "./components/Home";
+
+import LogIn from "./components/LogIn";
 import './App.css'
 
 function App() {
   return (
     <div className="App">
-      {/* <h1>Our app</h1>
-     <p>Hello project</p> */}
+{/* <h1>Our app</h1>
+     <p>Hello project</p>
+     /<Home />*/}
 
-     <Home />
+     <LogIn />
     </div>
   );
 }
