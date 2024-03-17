@@ -1,6 +1,5 @@
 import React from "react";
 import "./LogIn.css";
-import './font.css';
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 

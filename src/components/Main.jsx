@@ -4,11 +4,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
-import StoreIcon from "@mui/icons-material/Store";
-import AssignmentIcon from "@mui/icons-material/Assignment";
 import KeyboardDoubleArrowDownSharp from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import MovingSharp from "@mui/icons-material/MovingSharp";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./font.css";
 
 const Main = () => {
@@ -84,12 +82,12 @@ const Main = () => {
             Our Shop
           </div>
           <div className="Possibilities-section-pic grid1">
-            <img src="./images/totalblack.jpg" alt="Our Shop Image" />
+            <img src="./images/totalblack.jpg" alt="Our Shop" />
           </div>
           {/* </div> */}
           {/* <div className="Possibilities-section-tasks"> */}
           <div className="Possibilities-section-pic grid2">
-            <img src="./images/totalblack.jpg" alt="Tasks Image" />
+            <img src="./images/totalblack.jpg" alt="Tasks" />
           </div>
           <div className="Possibilities-section-text grid4">
             Tasks Adding
