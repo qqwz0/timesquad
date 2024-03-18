@@ -55,7 +55,7 @@ const Main = () => {
           </Button>
         </div>
         <div className="problem-pic-container">
-          <img src="./images/piligrim.jpg" alt="Description" />
+          <img className="ourcharactermain" src="./images/ourcharacter.png" alt="Description" />
         </div>
       </div>
       <div className="scroll">

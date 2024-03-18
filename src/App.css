@@ -105,7 +105,7 @@ body {
 }
 
 .problem-pic-container img {
-    max-width: 100%;
+    max-width: 130%;
     height: auto;
     display: block; /* Ensures the image doesn't have any spacing below it */
 }
