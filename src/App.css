@@ -140,11 +140,11 @@ body {
 
 .howitworks-section-top p {
   text-align: center;
-  max-width: 600px !important;
+  max-width: 600px;
 }
 
 .howitworks-section-top h1 {
-  max-width: 700px !important;
+  max-width: 700px;
 }
 
 .howitworks-section-top {
@@ -192,7 +192,7 @@ body {
 }
 
 .ubuntu-condensed-heading {
-	font-family: 'Ubuntu Condensed', sans-serif !important;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .Possibilities-section-wrapper {
