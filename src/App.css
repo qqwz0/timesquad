@@ -43,7 +43,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } */
-html{
+/* html{
   scroll-behavior: smooth;
 }
 body {
@@ -107,7 +107,7 @@ body {
 .problem-pic-container img {
     max-width: 130%;
     height: auto;
-    display: block; /* Ensures the image doesn't have any spacing below it */
+    display: block; 
 }
 
 .home-nav {
@@ -216,7 +216,7 @@ body {
   }
 
   .Possibilities-section-text {
-    margin-right: 20px; /* Adjust the margin as per your requirement */
+    margin-right: 20px; 
 }
 
 .Possibilities-section-pic img {
@@ -274,17 +274,10 @@ body {
 }
 
 .Possibilities-section-text {
-  /* margin-bottom: 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.Possibilities-section-pic img {
-  /* max-width: 100%;
-  height: auto; */
-}
-
 .grid3_movingarrow{
   transform: rotate(180);
   -webkit-transform: rotate(180);
@@ -292,10 +285,6 @@ body {
   -ms-transform: rotate(180);
   -o-transform: rotate(180);
 }
-/* Ебучі кнопки від mui */
-/* .css-i4bv87-MuiSvgIcon-root{
-  font-size: none;
-} */
 .moving-arrow > .css-i4bv87-MuiSvgIcon-root{
   font-size: 6rem ;
 }
@@ -306,4 +295,4 @@ body {
   font-size: 3rem;
   text-decoration: none;
   margin-top: 100px;
-}
+} */

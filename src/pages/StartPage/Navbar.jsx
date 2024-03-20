@@ -1,6 +1,6 @@
 import React from "react";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import './font.css';
+import './StartPage.css';
 
 const Navbar = () => {
 

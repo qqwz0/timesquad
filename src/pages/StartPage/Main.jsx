@@ -5,9 +5,8 @@ import ScheduleIcon from "@mui/icons-material/Schedule";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
 import KeyboardDoubleArrowDownSharp from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
-import MovingSharp from "@mui/icons-material/MovingSharp";
 import { Link } from "react-scroll";
-import "./font.css";
+import "./StartPage.css";
 
 const Main = () => {
   const buttonStyle = {
@@ -55,7 +54,11 @@ const Main = () => {
           </Button>
         </div>
         <div className="problem-pic-container">
-          <img className="ourcharactermain" src="./images/ourcharacter.png" alt="Description" />
+          <img
+            className="ourcharactermain"
+            src="./images/ourcharacter.png"
+            alt="Description"
+          />
         </div>
       </div>
       <div className="scroll">
@@ -65,7 +68,9 @@ const Main = () => {
           duration={500}
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          <div><KeyboardDoubleArrowDownSharp className="scroll_arrow" /></div>
+          <div>
+            <KeyboardDoubleArrowDownSharp className="scroll_arrow" />
+          </div>
         </Link>
       </div>
 
@@ -78,7 +83,6 @@ const Main = () => {
         <div className="Possibilities-section-content">
           {/* <div className="Possibilities-section-shop"> */}
           <div className="Possibilities-section-text grid3">
-            <MovingSharp />
             Our Shop
           </div>
           <div className="Possibilities-section-pic grid1">
@@ -95,20 +99,21 @@ const Main = () => {
           </div>
           <div className="grid5" id="grid51">
             Some text here...
-            <MovingSharp />
           </div>
           {/* </div> */}
         </div>
-        <div className="scroll">
-          <Link
-            to="howitwork_text"
-            smooth={true}
-            duration={500}
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <div><KeyboardDoubleArrowDownSharp className="scroll_arrow"/></div>
-          </Link>
-        </div>
+      </div>
+      <div className="second_scroll">
+        <Link
+          to="howitwork_text"
+          smooth={true}
+          duration={500}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div>
+            <KeyboardDoubleArrowDownSharp className="second_scroll_arrow" />
+          </div>
+        </Link>
       </div>
 
       <div className="howitworks-section-wrapper">
