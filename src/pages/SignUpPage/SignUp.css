@@ -13,9 +13,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../../images/back.jpg) no-repeat;
+    background: url(../../images/logregback.jpeg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .wrapper {
@@ -119,4 +119,13 @@ body {
 
 .register-link p a:hover {
     text-decoration: underline;
+}
+@media (max-width : 768px) {
+    body{
+        display: block;
+    }
+    .wrapper{
+        width: auto;
+        backdrop-filter: blur(7px);
+    }
 }
