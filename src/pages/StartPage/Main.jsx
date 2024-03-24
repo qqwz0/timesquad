@@ -1,6 +1,5 @@
 import React from "react";
 //import Button from "@mui/material/Button";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
@@ -9,16 +8,6 @@ import { Link } from "react-scroll";
 import "./StartPage.css";
 
 const Main = () => {
-  const buttonStyle = {
-    backgroundColor: "#4CAF50",
-    borderRadius: "8px",
-    color: "#ffffff",
-    padding: "10px 20px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: "10px",
-  };
 
   const howitworksInfoData = [
     {
@@ -40,20 +29,17 @@ const Main = () => {
       <div className="problem-container">
         <div className="problem-text-container">
           <p className="ubuntu-condensed-regular">
-            Ласкаво просимо на Time Fighters - твоє особисте просторово-часове
-            поле пригод! Стань володарем свого часу та розвивай свого
-            унікального персонажа, подорожуй між епохами і завданнями, та
-            вигравай битви з часом!
+          Чи не замислювався ти колись, наскільки наше життя схоже на гру? 
+          Кожен день ми, наче герої, виконуємо завдання та насолоджуємося винагородами, що дарує нам доля.
+          Але, часом, Час перемагає і ми змушені зіткнутися з наслідками нашої власної недбалості. 
           </p>
           <p className="ubuntu-condensed-regular">
-          Долучайся до нашої захоплюючої гри "Time Fighters" і відчуй себе 
-          справжнім героєм, що подорожує через час та простір, виконуючи захоплюючі завдання 
-          і перемагаючи в битвах! Розвивай свого персонажа, збираючи досвід та отримуючи 
-          нові навички, які допоможуть тобі подолати будь-які випробування. Приготуйся до захоплюючих пригод і незабутніх подорожей у світі "Time Fighters"!
+          Долучайся до "Time Fighters" і отримай відданого приплічника у боротьбі з Часом. 
+          Розвивай свого персонажа, збираючи досвід та отримуючи нові навички, які допоможуть тобі подолати будь-які випробування. 
+          Приготуйся до захоплюючих пригод і незабутніх подорожей у світі "Time Fighters"!
           </p>
           <button
-            className="button"
-            endIcon={<ArrowForwardIcon />}
+            className="problem-button"
           >
             Start!
           </button>
@@ -62,7 +48,6 @@ const Main = () => {
           <img
             className="ourcharactermain"
             src="./images/ourcharacter.png"
-            alt="Description"
           />
         </div>
       </div>
@@ -91,19 +76,19 @@ const Main = () => {
             Our Shop
           </div>
           <div className="Possibilities-section-pic grid1">
-            <img src="./images/totalblack.jpg" alt="Our Shop" />
+            <img src="./images/shop.jpg" alt="Our Shop" />
           </div>
           {/* </div> */}
           {/* <div className="Possibilities-section-tasks"> */}
           <div className="Possibilities-section-pic grid2">
-            <img src="./images/totalblack.jpg" alt="Tasks" />
+            <img src="./images/tasks.png" alt="Tasks" />
           </div>
           <div className="Possibilities-section-text grid4">
             Tasks Adding
             {/* <p className="grid5">Some text here...</p> */}
           </div>
           <div className="grid5" id="grid51">
-            Some text here...
+            Тут ти можеш не лише додавати й виконувати завдання, а й стилізувати свого персонажа.
           </div>
           {/* </div> */}
         </div>
@@ -113,8 +98,7 @@ const Main = () => {
           to="howitwork_text"
           smooth={true}
           duration={500}
-          style={{ textDecoration: "none", color: "inherit" }}
-        >
+          style={{ textDecoration: "none", color: "inherit" }}>
           <div>
             <KeyboardDoubleArrowDownSharp className="second_scroll_arrow" />
           </div>
@@ -138,6 +122,11 @@ const Main = () => {
               {data.icon}
             </div>
           ))}
+        </div>
+        <div className="howitworks-button-wrapper">
+          <button className="howitworks-button">
+            Start!
+          </button>
         </div>
       </div>
     </div>
