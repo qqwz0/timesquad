@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../../images/logregback.jpeg) no-repeat;
+    background: url(../../../public/images/back.jpg) no-repeat;
     background-size: cover;
     background-position: bottom;
 }

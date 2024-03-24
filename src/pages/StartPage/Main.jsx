@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@mui/material/Button";
+//import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
@@ -45,13 +45,18 @@ const Main = () => {
             унікального персонажа, подорожуй між епохами і завданнями, та
             вигравай битви з часом!
           </p>
-          <Button
-            variant="contained"
-            style={buttonStyle}
+          <p className="ubuntu-condensed-regular">
+          Долучайся до нашої захоплюючої гри "Time Fighters" і відчуй себе 
+          справжнім героєм, що подорожує через час та простір, виконуючи захоплюючі завдання 
+          і перемагаючи в битвах! Розвивай свого персонажа, збираючи досвід та отримуючи 
+          нові навички, які допоможуть тобі подолати будь-які випробування. Приготуйся до захоплюючих пригод і незабутніх подорожей у світі "Time Fighters"!
+          </p>
+          <button
+            className="button"
             endIcon={<ArrowForwardIcon />}
           >
             Start!
-          </Button>
+          </button>
         </div>
         <div className="problem-pic-container">
           <img
