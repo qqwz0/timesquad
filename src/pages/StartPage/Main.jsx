@@ -87,11 +87,11 @@ const Main = () => {
             Tasks Adding
             {/* <p className="grid5">Some text here...</p> */}
           </div>
-          <div className="grid5" id="grid51">
-            Тут ти можеш не лише додавати й виконувати завдання, а й стилізувати свого персонажа.
-          </div>
           {/* </div> */}
         </div>
+        <div className="grid15" id="grid51">
+            Тут ти можеш не лише додавати й виконувати завдання, а й стилізувати свого персонажа.
+          </div>
       </div>
       <div className="second_scroll">
         <Link
