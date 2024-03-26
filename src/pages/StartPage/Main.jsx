@@ -8,7 +8,6 @@ import { Link as RouterLink } from "react-router-dom";
 import "./StartPage.css";
 
 const Main = () => {
-
   const howitworksInfoData = [
     {
       title: "Cтворюй завдання, занотовуй плани",
@@ -29,28 +28,27 @@ const Main = () => {
       <div className="problem-container">
         <div className="problem-text-container">
           <p className="ubuntu-condensed-regular">
-            Чи не замислювався ти колись, наскільки наше життя схоже на гру? 
-            Кожен день ми, наче герої, виконуємо завдання та насолоджуємося винагородами, що дарує нам доля.
-            Але, часом, Час перемагає і ми змушені зіткнутися з наслідками нашої власної недбалості. 
+            Чи не замислювався ти колись, наскільки наше життя схоже на гру?
+            Кожен день ми, наче герої, виконуємо завдання та насолоджуємося
+            винагородами, що дарує нам доля. Але, часом, Час перемагає і ми
+            змушені зіткнутися з наслідками нашої власної недбалості.
           </p>
           <p className="ubuntu-condensed-regular">
-            Долучайся до "Time Fighters" і отримай відданого приплічника у боротьбі з Часом. 
-            Розвивай свого персонажа, збираючи досвід та отримуючи нові навички, які допоможуть тобі подолати будь-які випробування. 
-            Приготуйся до захоплюючих пригод і незабутніх подорожей у світі "Time Fighters"!
-          </p>
+            Долучайся до "Time Fighters" і отримай відданого приплічника у
+            боротьбі з Часом. Розвивай свого персонажа, збираючи досвід та
+            отримуючи нові навички, які допоможуть тобі подолати будь-які
+            випробування. Приготуйся до захоплюючих пригод і незабутніх
+            подорожей у світі "Time Fighters"!
+          </p>{" "}
+          <div>
+            <RouterLink to="/sign-up">
+              <button className="problem-button">Start!</button>
+            </RouterLink>
+          </div>
         </div>
-        <div>
-          <RouterLink to="/sign-up">
-            <button className="problem-button">
-              Start!
-            </button>
-          </RouterLink>
-        </div>
+
         <div className="problem-pic-container">
-          <img
-            className="ourcharactermain"
-            src="./images/ourcharacter.png"
-          />
+          <img className="ourcharactermain" src="./images/ourcharacter2.png" />
         </div>
       </div>
       <div className="scroll">
@@ -74,9 +72,7 @@ const Main = () => {
         </div>
         <div className="Possibilities-section-content">
           {/* <div className="Possibilities-section-shop"> */}
-          <div className="Possibilities-section-text grid3">
-            Our Shop
-          </div>
+          <div className="Possibilities-section-text grid3">Our Shop</div>
           <div className="Possibilities-section-pic grid1">
             <img src="./images/shop.jpg" alt="Our Shop" />
           </div>
@@ -92,15 +88,17 @@ const Main = () => {
           {/* </div> */}
         </div>
         <div className="grid15" id="grid51">
-            Тут ти можеш не лише додавати й виконувати завдання, а й стилізувати свого персонажа.
-          </div>
+          Тут ти можеш не лише додавати й виконувати завдання, а й стилізувати
+          свого персонажа.
+        </div>
       </div>
       <div className="second_scroll">
         <Link
           to="howitwork_text"
           smooth={true}
           duration={500}
-          style={{ textDecoration: "none", color: "inherit" }}>
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
           <div>
             <KeyboardDoubleArrowDownSharp className="second_scroll_arrow" />
           </div>
@@ -123,14 +121,12 @@ const Main = () => {
               <h2 className="ubuntu-condensed-regular">{data.title}</h2>
               {data.icon}
             </div>
-          ))}
-        </div>
-        <div className="howitworks-button-wrapper">
-          <RouterLink to="sign-up">
-            <button className="howitworks-button">
-              Start!
-            </button>
-          </RouterLink>
+          ))}{" "}
+          <div className="howitworks-button-wrapper">
+            <RouterLink to="sign-up">
+              <button className="howitworks-button">Start!</button>
+            </RouterLink>
+          </div>
         </div>
       </div>
     </div>

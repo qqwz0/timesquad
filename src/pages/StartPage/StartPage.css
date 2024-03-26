@@ -27,6 +27,7 @@ body {
     background-color: rgb(108, 247, 108);
     background: url(./images/back.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -72,7 +73,7 @@ body {
     margin-right: 100px;
     margin-bottom: 100px;
     margin-left: 100px;
-    padding: 63px;
+    padding: 50px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -81,9 +82,8 @@ body {
 
 .problem-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 61vh;
 }
 
 .problem-text-container {
@@ -104,6 +104,9 @@ body {
 .problem-text-container button {
     display: inline-block;
     margin: 10px auto 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .problem-pic-container {
@@ -147,7 +150,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
 }
 
 .howitworks-section-top p {
@@ -209,7 +211,7 @@ body {
 }
 
 .howitworks-button {
-    width:  50%;
+    width:  150px;
     height: 45px;
     background: #77b56d;
     border: none;
@@ -246,7 +248,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 67vh;
     margin-top: 60px;
 }
 
@@ -292,7 +293,7 @@ body {
     grid-template-rows: repeat(2, 0fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: 15px;
+    margin: 20px 0;
 }
 
 .grid1 {
@@ -314,7 +315,6 @@ body {
 .grid15 {
     grid-area: 3 / 2 / 4 / 3;
     text-align: center;
-    white-space: nowrap;
     font-size: 23px;
     font-family: "Ubuntu Condensed", sans-serif;
     font-weight: 400;
@@ -365,7 +365,7 @@ body {
 
 .scroll {
     font-size: 2rem;
-    margin-top: 40px;
+    margin-top: 52px;
 }
 
 .scroll .scroll_arrow {
@@ -375,7 +375,7 @@ body {
 
 .second_scroll {
     font-size: 2rem;
-    margin-top: 110px;
+    margin-top: 35px;
 }
 
 .second_scroll .second_scroll_arrow {
@@ -410,6 +410,9 @@ body {
 }
 
 @media (max-width: 845px) {
+    .problem-text-container p{
+        font-size: 14px;
+    }
     .home-nav {
         font-size: 1.2rem;
         /* padding-left: 80px;
@@ -509,6 +512,19 @@ body {
     }
 }
 
+@media (max-width: 570px){
+    .problem-container {
+        flex-direction: column-reverse;
+    }
+    .home-container{
+        margin: 0;
+        padding: 30px;
+    }
+    .problem-text-container {
+        width: 90%;
+    }
+}
+
 @media (max-width: 475px) {
     .howitworks-section-info {
         width: 250px;
@@ -519,12 +535,15 @@ body {
         padding: 40px;
     }
 
-    .howitworks-section-info h2, .ubuntu-condensed-regular.larger-font {
+    .howitworks-section-info h2, .ubuntu-condensed-regular.larger-font, .grid15{
         font-size: 18px;
     }
 }
 
 @media (max-width: 425px) {
+    .home-container{
+        margin: 0;
+    }
     .problem-container {
         flex-direction: column-reverse;
     }
@@ -550,7 +569,7 @@ body {
         font-size: 22px;
     }
 
-    .howitworks-section-info h2, .ubuntu-condensed-regular.larger-font {
+    .howitworks-section-info h2, .ubuntu-condensed-regular.larger-font, .grid15 {
         font-size: 17px;
     }
 
