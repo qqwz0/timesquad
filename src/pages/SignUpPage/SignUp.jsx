@@ -4,6 +4,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 import GmailIcon from '@mui/icons-material/Email';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [showPassword1, setShowPassword1] = useState(false);
@@ -47,7 +48,9 @@ const SignUp = () => {
         </div>
         <button type={styles.submit}>Зареєструватися</button>
         <div className={styles.registerlink}>
-                <p>Вже маєш аккаунт?<a href="#"> Увійди!</a></p>
+          <p>
+            Вже маєш акаунт?<Link to="/log-in">Увійди!</Link>
+          </p>
             </div>
       </form>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link as RouterLink } from "react-router-dom";
 import './StartPage.css';
 
 const Navbar = () => {
@@ -9,9 +10,9 @@ const Navbar = () => {
       <div >
         <h1 className="silkscreen-bold">Time Fighters</h1>
       </div>
+      <RouterLink to="/log-in">
         <AccountCircleIcon className="account-icon" />
-      <div>
-      </div>
+      </RouterLink>
     </div>
   );
 };

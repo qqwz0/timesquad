@@ -1,10 +1,10 @@
 import React from "react";
-//import Button from "@mui/material/Button";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
 import KeyboardDoubleArrowDownSharp from "@mui/icons-material/KeyboardDoubleArrowDownSharp";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import "./StartPage.css";
 
 const Main = () => {
@@ -29,20 +29,22 @@ const Main = () => {
       <div className="problem-container">
         <div className="problem-text-container">
           <p className="ubuntu-condensed-regular">
-          Чи не замислювався ти колись, наскільки наше життя схоже на гру? 
-          Кожен день ми, наче герої, виконуємо завдання та насолоджуємося винагородами, що дарує нам доля.
-          Але, часом, Час перемагає і ми змушені зіткнутися з наслідками нашої власної недбалості. 
+            Чи не замислювався ти колись, наскільки наше життя схоже на гру? 
+            Кожен день ми, наче герої, виконуємо завдання та насолоджуємося винагородами, що дарує нам доля.
+            Але, часом, Час перемагає і ми змушені зіткнутися з наслідками нашої власної недбалості. 
           </p>
           <p className="ubuntu-condensed-regular">
-          Долучайся до "Time Fighters" і отримай відданого приплічника у боротьбі з Часом. 
-          Розвивай свого персонажа, збираючи досвід та отримуючи нові навички, які допоможуть тобі подолати будь-які випробування. 
-          Приготуйся до захоплюючих пригод і незабутніх подорожей у світі "Time Fighters"!
+            Долучайся до "Time Fighters" і отримай відданого приплічника у боротьбі з Часом. 
+            Розвивай свого персонажа, збираючи досвід та отримуючи нові навички, які допоможуть тобі подолати будь-які випробування. 
+            Приготуйся до захоплюючих пригод і незабутніх подорожей у світі "Time Fighters"!
           </p>
-          <button
-            className="problem-button"
-          >
-            Start!
-          </button>
+        </div>
+        <div>
+          <RouterLink to="/sign-up">
+            <button className="problem-button">
+              Start!
+            </button>
+          </RouterLink>
         </div>
         <div className="problem-pic-container">
           <img
@@ -124,9 +126,11 @@ const Main = () => {
           ))}
         </div>
         <div className="howitworks-button-wrapper">
-          <button className="howitworks-button">
-            Start!
-          </button>
+          <RouterLink to="sign-up">
+            <button className="howitworks-button">
+              Start!
+            </button>
+          </RouterLink>
         </div>
       </div>
     </div>

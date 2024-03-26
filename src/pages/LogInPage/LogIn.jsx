@@ -1,8 +1,8 @@
-
 import styles from "./LogIn.module.css";
 import PersonIcon from "@mui/icons-material/Person";
 import LockIcon from "@mui/icons-material/Lock";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LogIn = () => {
   const [showPassword1, setShowPassword1] = useState(false);
@@ -39,7 +39,7 @@ const LogIn = () => {
         <button type="submit">Увійти</button>
         <div className={styles.registerlink}>
           <p>
-            Досі не маєш аккаунта?<a href="#">Зареєструйся!</a>
+            Досі не маєш аккаунта?<Link to="/sign-up">Зареєструйся!</Link>
           </p>
         </div>
       </form>
