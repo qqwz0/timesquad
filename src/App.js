@@ -1,17 +1,22 @@
-//import Home from "./pages/StartPage/Home";
-//import LogIn from "./pages/LogInPage/LogIn";
-import SignUp from "./pages/SignUpPage/SignUp";
-
+import Home from "./pages/StartPage/Home";
+import LogIn from "./pages/LogInPage/LogIn";
+//import SignUp from "./pages/SignUpPage/SignUp";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' 
 
 function App() {
   return (
-    <div className="App">
-      {/* <h1>Our app</h1>
-     <p>Hello project</p> */}
-      <SignUp /> 
-      {/*<LogIn /> */}
-      {/* <SingUp /> */}
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/log-in">
+            <LogIn />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
