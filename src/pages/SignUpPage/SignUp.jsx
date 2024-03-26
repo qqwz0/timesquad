@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SignUp.css";
+import styles from "./SignUp.module.css";
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 import GmailIcon from '@mui/icons-material/Email';
@@ -18,35 +18,35 @@ const SignUp = () => {
   };
 
   return (
-    <div className='wrapper'>
+    <div className={styles.wrapper}>
       <form action="">
         <h1>Sign Up</h1>
-        <div className="input-box">
+        <div className={styles.inputbox}>
           <input type="text" placeholder="Ім'я користувача" required />
-          <PersonIcon className="icon"/>
+          <PersonIcon className={styles.icon}/>
         </div>
-        <div className="input-box">
+        <div className={styles.inputbox}>
           <input type="email" placeholder='Електронна пошта' required />
-          <GmailIcon className="icon"/>
+          <GmailIcon className={styles.icon}/>
         </div>
-        <div className="input-box">
+        <div className={styles.inputbox}>
           <input
             type={showPassword1 ? 'text' : 'password'}
             placeholder='Пароль'
             required
           />
-          <LockIcon className="icon" onClick={togglePasswordVisibility1} />
+          <LockIcon className={styles.icon} onClick={togglePasswordVisibility1} />
         </div>
-        <div className="input-box">
+        <div className={styles.inputbox}>
           <input
             type={showPassword2 ? 'text' : 'password'}
             placeholder='Підтвердити пароль'
             required
           />
-          <CheckCircleIcon className="icon" onClick={togglePasswordVisibility2} />
+          <CheckCircleIcon className={styles.icon} onClick={togglePasswordVisibility2} />
         </div>
-        <button type="submit">Зареєструватися</button>
-        <div className="register-link">
+        <button type={styles.submit}>Зареєструватися</button>
+        <div className={styles.registerlink}>
                 <p>Вже маєш аккаунт?<a href="#"> Увійди!</a></p>
             </div>
       </form>

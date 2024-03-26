@@ -1,7 +1,6 @@
-import LogIn from "./pages/LogInPage/LogIn";
 //import Home from "./pages/StartPage/Home";
 //import LogIn from "./pages/LogInPage/LogIn";
-// import SingUp from "./pages/SignUpPage/SignUp";
+import SignUp from "./pages/SignUpPage/SignUp";
 
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div className="App">
       {/* <h1>Our app</h1>
      <p>Hello project</p> */}
-      <LogIn /> 
+      <SignUp /> 
       {/*<LogIn /> */}
       {/* <SingUp /> */}
     </div>
