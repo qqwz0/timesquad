@@ -1,4 +1,5 @@
-import "./LogIn.css";
+
+import styles from "./LogIn.module.css";
 import PersonIcon from "@mui/icons-material/Person";
 import LockIcon from "@mui/icons-material/Lock";
 import React, { useState } from "react";
@@ -11,23 +12,23 @@ const LogIn = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <form action="">
         <h1>Log In</h1>
-        <div className="input-box">
+        <div className={styles.inputbox}>
           <input type="text" placeholder="Ім'я користувача" required />
-          <PersonIcon className="icon" />
+          <PersonIcon className={styles.icon} />
         </div>
-        <div className="input-box">
+        <div className={styles.inputbox}>
           <input
             type={showPassword1 ? "text" : "password"}
             placeholder="Пароль"
             required
           />
-          <LockIcon className="icon" onClick={togglePasswordVisibility1} />
+          <LockIcon className={styles.icon} onClick={togglePasswordVisibility1} />
         </div>
 
-        <div className="remember-forgot">
+        <div className={styles.rememberforgot}>
           <label>
             <input type="checkbox" />
             Запам'ятай мене!
@@ -36,7 +37,7 @@ const LogIn = () => {
         </div>
 
         <button type="submit">Увійти</button>
-        <div className="register-link">
+        <div className={styles.registerlink}>
           <p>
             Досі не маєш аккаунта?<a href="#">Зареєструйся!</a>
           </p>
